@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count and display items of a dropdown list - w3resource</title>
+  <link rel="stylesheet" href="Styles/cau6.css" />
+  <script src="Scripts/jquery.min.js"></script>
+  <script src="Scripts/cau6.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Bài tập thực hành jQuery - Câu 6</h2>
+    <p class="desc">MSSV: 6651071098 | Áp dụng jQuery đếm và hiển thị tất cả các mục trong dropdown list.</p>
+    
+    <div class="card">
+      <form onsubmit="return false;">
+        <label for="mySelect" class="form-label">Select your favorite Color :</label>
+        <select id="mySelect">
+          <option>Red</option>
+          <option>Green</option>
+          <option>Blue</option>
+          <option>White</option>
+        </select>
+        <br><br>
+        <input type="button" id="countBtn" onclick="getOptions()" value="Count and Output all items" />
+      </form>
+      
+      <div id="resultBox" class="result-box">
+        <h4>Kết quả thống kê (jQuery):</h4>
+        <p id="resultText">Chưa có kết quả.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

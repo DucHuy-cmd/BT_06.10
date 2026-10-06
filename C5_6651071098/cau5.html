@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display a random image.</title>
+  <link rel="stylesheet" href="Styles/cau5.css" />
+  <script src="Scripts/jquery.min.js"></script>
+  <script src="Scripts/cau5.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Bài tập thực hành jQuery - Câu 5</h2>
+    <p class="desc">MSSV: 6651071098 | Áp dụng jQuery để hiển thị hình ảnh ngẫu nhiên khi nhấn "Show Image".</p>
+    
+    <div class="card">
+      <div class="actions">
+        <button id="jsstyle" onclick="display_random_image()">Show Image</button>
+      </div>
+
+      <div id="imageContainer" class="image-container">
+        <p class="placeholder-text">Nhấn nút "Show Image" để hiển thị hình ảnh ngẫu nhiên</p>
+      </div>
+      <div id="imageInfo" class="image-info"></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation Exercise</title>
+  <link rel="stylesheet" href="Styles/cau9.css">
+  <script src="Scripts/jquery.min.js"></script>
+  <script src="Scripts/cau9.js" defer></script>
+</head>
+<body>
+  <div class="window-frame">
+    <div class="window-header">
+      <div class="window-buttons">
+        <span class="btn-circle red"></span>
+        <span class="btn-circle yellow"></span>
+        <span class="btn-circle green"></span>
+      </div>
+      <div class="window-title">Form Validation Exercise</div>
+    </div>
+    
+    <div class="window-body">
+      <form id="regForm" onsubmit="return false;">
+        <fieldset>
+          <legend>Personal Information</legend>
+          
+          <table class="form-table">
+            <tr>
+              <td class="col-label"><label for="fullname">Enter name*:</label></td>
+              <td class="col-input"><input type="text" id="fullname" name="fullname" value="Nguyen Van A"></td>
+            </tr>
+            
+            <tr>
+              <td class="col-label"><label>Sex*:</label></td>
+              <td class="col-input">
+                <label class="radio-label"><input type="radio" name="sex" value="Male" checked> Male</label>
+                <label class="radio-label"><input type="radio" name="sex" value="Female"> Female</label>
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="col-label"><label for="email">Enter email address*:</label></td>
+              <td class="col-input"><input type="text" id="email" name="email" value="nguyen.vana@gmail.com"></td>
+            </tr>
+            
+            <tr>
+              <td class="col-label"><label for="birthday">Enter birthday (MM/DD/YYYY)*:</label></td>
+              <td class="col-input"><input type="text" id="birthday" name="birthday" value="05/20/2004"></td>
+            </tr>
+            
+            <tr>
+              <td class="col-label"><label for="address">Enter street address (line 1)*:</label></td>
+              <td class="col-input"><input type="text" id="address" name="address" value="123 Nguyen Trai"></td>
+            </tr>
+            
+            <tr>
+              <td class="col-label"><label for="city">Enter city*:</label></td>
+              <td class="col-input"><input type="text" id="city" name="city" value="Ho Chi Minh"></td>
+            </tr>
+            
+            <tr>
+              <td class="col-label"><label for="region">Select a region*:</label></td>
+              <td class="col-input">
+                <select id="region" name="region">
+                  <option value="">-- Choose Region --</option>
+                  <option value="North">Miền Bắc</option>
+                  <option value="Central">Miền Trung</option>
+                  <option value="South" selected>Miền Nam</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="col-label"><label for="zipcode">Enter 5-digit ZIP code*:</label></td>
+              <td class="col-input"><input type="text" id="zipcode" name="zipcode" value="70000"></td>
+            </tr>
+            
+            <tr>
+              <td></td>
+              <td class="col-actions">
+                <button type="button" id="btnFinished">Finished</button>
+                <button type="button" id="btnClear">Clear</button>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+      
+      <div id="validationResult" class="validation-result"></div>
+    </div>
+  </div>
+</body>
+</html>

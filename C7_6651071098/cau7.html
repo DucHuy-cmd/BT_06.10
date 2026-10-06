@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuyển hướng đến đường link</title>
+  <link rel="stylesheet" href="Styles/cau7.css">
+  <script src="Scripts/jquery.min.js"></script>
+  <script src="Scripts/cau7.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Bài tập thực hành jQuery - Câu 7</h2>
+    <p class="desc">MSSV: 6651071098 | Hiện dialog xác nhận trước khi chuyển hướng đến liên kết.</p>
+    
+    <div class="card">
+      <h1>Nhập đường link và nhấn "Submit" để chuyển hướng:</h1>
+      <form id="linkForm">
+        <div class="input-row">
+          <input type="text" id="linkInput" placeholder="Ví dụ: google.com hoặc https://w3schools.com" value="https://google.com">
+          <button type="submit" id="submitBtn">Submit</button>
+        </div>
+      </form>
+      
+      <div id="statusMessage" class="status-box"></div>
+    </div>
+  </div>
+</body>
+</html>

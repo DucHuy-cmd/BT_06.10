@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove items from a dropdown list</title>
+  <link rel="stylesheet" href="Styles/cau4.css" />
+  <script src="Scripts/jquery.min.js"></script>
+  <script src="Scripts/cau4.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Bài tập thực hành jQuery - Câu 4</h2>
+    <p class="desc">MSSV: 6651071098 | Áp dụng jQuery để xóa mục đã chọn khỏi dropdown list.</p>
+    
+    <div class="card">
+      <form onsubmit="return false;">
+        <div class="select-group">
+          <label for="colorSelect">Chọn màu sắc:</label>
+          <select id="colorSelect" size="4">
+            <option>Red</option>
+            <option>Green</option>
+            <option>White</option>
+            <option>Black</option>
+          </select>
+        </div>
+        
+        <div class="actions">
+          <input type="button" id="removeBtn" onclick="removecolor()" value="Select and Remove" />
+          <button type="button" id="resetBtn" onclick="resetList()">Khôi phục danh sách</button>
+        </div>
+      </form>
+      
+      <div id="statusMsg" class="status-msg"></div>
+    </div>
+  </div>
+</body>
+</html>

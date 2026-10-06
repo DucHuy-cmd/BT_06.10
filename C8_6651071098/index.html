@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Máy tính đơn giản - Câu 8</title>
+  <link rel="stylesheet" href="Styles/cau8.css">
+  <script src="Scripts/jquery.min.js"></script>
+  <script src="Scripts/cau8.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Bài tập thực hành jQuery - Câu 8</h2>
+    <p class="desc">MSSV: 6651071098 | Áp dụng DOM và jQuery tạo chương trình máy tính 2 số hạng.</p>
+    
+    <div class="card">
+      <div class="calculator-row">
+        <input type="number" id="num1" class="calc-input" value="12" placeholder="Số thứ 1">
+        
+        <div class="operator-group">
+          <button type="button" class="btn-op" data-op="+">+</button>
+          <button type="button" class="btn-op active" data-op="-">-</button>
+          <button type="button" class="btn-op" data-op="*">&times;</button>
+          <button type="button" class="btn-op" data-op="/">&divide;</button>
+        </div>
+        
+        <input type="number" id="num2" class="calc-input" value="14" placeholder="Số thứ 2">
+        
+        <span class="equals-sign">=</span>
+        
+        <input type="text" id="result" class="calc-input result-input" value="-2" readonly>
+      </div>
+
+      <div id="calculationLog" class="calc-log">
+        Biểu thức hiện tại: <strong>12 - 14 = -2</strong>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Return first and last name from a form</title>
+  <link rel="stylesheet" href="Styles/cau29.css" />
+  <script src="Scripts/cau29.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Bài tập thực hành JavaScript - Câu 29</h2>
+    <p class="desc">MSSV: 6651071098 | Áp dụng DOM để lấy ra giá trị Họ và tên từ hai input form.</p>
+    
+    <div class="card">
+      <form id="form1" onsubmit="getFormvalue(event); return false;">
+        <div class="form-group">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" value="David" />
+        </div>
+        
+        <div class="form-group">
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" value="Beckham" />
+        </div>
+        
+        <div class="form-group">
+          <input type="submit" id="submitBtn" value="Submit" />
+        </div>
+      </form>
+      
+      <div id="resultBox" class="result-box">
+        <h4>Kết quả lấy từ Form:</h4>
+        <p id="resultText">Chưa có dữ liệu</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

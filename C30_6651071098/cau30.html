@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insert row in a table - w3resource</title>
+  <link rel="stylesheet" href="Styles/cau30.css" />
+  <script src="Scripts/cau30.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Bài tập thực hành JavaScript - Câu 30</h2>
+    <p class="desc">MSSV: 6651071098 | Áp dụng DOM để thêm 1 hàng vào table đã tồn tại khi nhấn "Insert row".</p>
+    
+    <div class="card">
+      <table id="sampleTable" border="1">
+        <tr>
+          <td>Row1 cell1</td>
+          <td>Row1 cell2</td>
+        </tr>
+        <tr>
+          <td>Row2 cell1</td>
+          <td>Row2 cell2</td>
+        </tr>
+      </table>
+      
+      <div class="actions">
+        <input type="button" id="insertBtn" onclick="insert_Row()" value="Insert row" />
+        <span id="rowCountInfo" class="info-text">Tổng số hàng hiện tại: 2</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

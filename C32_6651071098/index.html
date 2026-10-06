@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display a random image.</title>
+  <link rel="stylesheet" href="Styles/cau32.css" />
+  <script src="Scripts/cau32.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Bài tập thực hành JavaScript - Câu 32</h2>
+    <p class="desc">MSSV: 6651071098 | Hiển thị một hình ảnh ngẫu nhiên khi nhấp vào nút "Show Image".</p>
+    
+    <div class="card">
+      <div class="actions">
+        <button id="jsstyle" onclick="display_random_image()">Show Image</button>
+      </div>
+
+      <div id="imageContainer" class="image-container">
+        <p class="placeholder-text">Nhấn nút "Show Image" để hiển thị hình ảnh ngẫu nhiên</p>
+      </div>
+      <div id="imageInfo" class="image-info"></div>
+    </div>
+  </div>
+</body>
+</html>
